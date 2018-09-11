@@ -1,0 +1,13 @@
+// Variables
+
+// Theme
+$red: #e11925;
+$black: #000;
+$white: #fff;
+$gray: #dad7d6;
+
+// Mixins
+@mixin flex($property) {
+    display: flex;
+    justify-content: $property;
+}

@@ -1,0 +1,35 @@
+@import './_variables';
+
+// Custom Fonts
+@font-face {
+    font-family: 'meta-normal';
+    src: url('./fonts/1\ Normal/Meta-Normal.ttf') format('truetype'), 
+    url('./fonts/1\ Normal/Meta-Normal_Caps.pfb'),
+    url('./fonts/1\ Normal/Meta-Normal_Caps.pfm');
+}
+
+@font-face {
+    font-family: 'meta-normal-light';
+    src: url('./fonts/1\ Normal/Meta-Normal_Lf.ttf') format('truetype'),
+    url('./fonts/1\ Normal/Meta-Normal_Lf.pfb'),
+    url('./fonts/1\ Normal/Meta-Normal_Lf.pfm');
+}
+
+h2 {
+    font-family: 'meta-normal', 'sans-serif';
+    font-size: 3em;
+}
+
+p {
+    font-family: 'meta-normal-light', 'meta-normal', 'sans-serif';
+    font-size: 1.25em;
+    line-height: 1.25;
+}
+
+hr {
+    height: 4px;
+    display: block;
+    width: 90px;
+    margin: 1.5em 0;
+    background: $red;
+}

@@ -23,7 +23,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="desktop__main">
         <div>
             <h2 class="section__h2">
                 Planungsfehler vermeiden?
@@ -105,6 +105,93 @@
             <div id="form-messages"></div>
         </form>
     </main>
+
+    <!-- Mobile Version -->
+    <main class="mobile__main">
+        <div>
+            <h2 class="section__h2">
+                Planungsfehler vermeiden?
+                Zeit sparen? Effizienter arbeiten?
+                Setzen Sie auf intelligente Gebäudemodelle.
+            </h2>
+            <hr />
+            <p>
+                Immer mehr Architekten, Bauingenieure und Gebäudetechniker
+                setzen auf BIM-Arbeitsweisen und -Methoden in jeder Projektphase.
+                Mit Revit und BIM 360 sind auch Sie optimal auf die Zukunft
+                vorbereitet. Erfahren Sie, wie Sie mit der Cloud Technologie
+                intelligente Gebäudemodelle effizienter planen und Änderungen
+                als Fehlerquellen ausschalten.
+            </p>
+
+            <div class="button__container">
+                <button type="button">
+                    MEHR ERFAHREN
+                </button>
+            </div>
+        </div>
+    </main>
+    <section class="mobileForm__section">
+
+        <form action="./mailer.php" method="POST" class="mobile__form">
+            <h3 id="form__heading">
+                Downloaden Sie sich jetzt unsere kostenfreie
+                <span class="text__bold">Revit LT Informationsbroschüre.</span>
+            </h3>
+    
+            <!-- User information -->
+            <label for="email">
+                E-Mail:
+                <input type="email" name="email" id="email" required />
+            </label>
+    
+            <label for="gender">
+                Anrede:
+                <label class="container">Frau
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Mann
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </label>
+            <br />
+    
+            <label for="fname">
+                Vorname:
+                <input type="text" name="fname" id="fname" required />
+            </label>
+            <br />
+            <label for="lname">
+                Name:
+    
+                <input type="text" name="lname" id="lname" required />
+            </label>
+            <br />
+    
+            <label for="gdpr">
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <p>
+                        Ich erkläre mich mit den <span class="text__bold">Datenschutzbestimmungen
+                            einverstanden.</span>
+                    </p>
+                </label>
+            </label>
+            <br />
+    
+            <!-- Submit -->
+            <div class="form__submit-container">
+                <button class="form__submit text__uppercase" type="submit">
+                    Kostenlos Anfordern
+                </button>
+            </div>
+    
+            <div id="form-messages"></div>
+        </form>
+    </section>
 
     <section id="section__bim-consulting">
 

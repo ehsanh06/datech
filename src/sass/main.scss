@@ -26,6 +26,8 @@ header {
     }
 }
 
+
+// Main (Desktop Version)
 main.desktop__main {
     background: url(../images/stock-image.png);
     background-repeat: no-repeat;
@@ -51,6 +53,14 @@ section.mobileForm__section {
     display: none;
 }
 
+// Large Laptop
+@media screen and (max-width: 1440px) {
+    main.desktop__main {
+        height: 100%;
+    }
+}
+
+// Tablet
 @media screen and (max-width: 768px) {
     main.desktop__main {
         display: none;
@@ -79,6 +89,8 @@ section.mobileForm__section {
     }
 }
 
+
+// Section BIM Consulting (Desktop Version)
 section#section__bim-consulting {
     display: flex;
     flex-direction: row;
@@ -130,6 +142,23 @@ section#section__bim-consulting {
     }
 }
 
+// Large Laptop
+@media screen and (max-width: 1440px) {
+    section#section__bim-consulting {
+        div#bim-consulting__benefit-container {
+            width: 30%;
+
+            #benefit__content {
+
+                .button__container {
+                    width: 55%;
+                }
+            }
+        }
+    }
+}
+
+// Tablet Version
 @media screen and (max-width: 768px) {
     section#section__bim-consulting {
         flex-direction: column;
@@ -173,6 +202,7 @@ section#section__bim-consulting {
     }
 }
 
+// Section Revit (Desktop version)
 section#section__revit,
 section#section__kompetenz {
     background: #E9EAEA;
@@ -207,6 +237,7 @@ section#section__kompetenz {
     }
 }
 
+// Tablet Version
 @media screen and (max-width: 768px) {
     
     section#section__revit,
@@ -242,6 +273,7 @@ section#section__kompetenz {
     }
 }
 
+// Section Kompetenz (Desktop version)
 section#section__kompetenz {
     background: $white;
 
@@ -270,6 +302,22 @@ section#section__kompetenz {
     }
 }
 
+// Large laptops
+@media screen and (max-width: 1440px) {
+    section#section__kompetenz {
+        > div {
+            div:first-child {
+                width: 45%;
+            }
+
+            div:nth-child(2) {
+                padding: 1em 0;
+            }
+        }
+    }
+}
+
+// Tablet Version
 @media screen and (max-width: 768px) { 
     section#section__kompetenz {
         > div {
@@ -324,7 +372,7 @@ section#section__contact {
         background-size: cover;
         padding: 1em 5em 3em;
         display: grid;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: 150px 2fr;
 
         p {
             padding: 1em 0;

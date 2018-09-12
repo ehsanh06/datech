@@ -11,3 +11,11 @@ $gray: #dad7d6;
     display: flex;
     justify-content: $property;
 }
+
+@mixin generateRatios($width, $height, $prefix: "ratio-") {
+    $class-name: $prefix + $width + "x"+ $height;
+
+    .#{$class-name} {
+        padding-bottom: ratio($width, $height);
+    }
+}

@@ -196,7 +196,7 @@ form {
 @media screen and (max-width: 425px) { 
 
     section.mobileForm__section {
-        margin: 0 0 3em;
+        margin: 3em 0 5em;
 
         form.mobile__form {
             width: 70%;
@@ -218,7 +218,7 @@ form {
             label[for=gender] .container:last-child {
                 margin: 0;
             }
-            
+
             label[for=gdpr] .container {
                 padding-left: 2em;
                 word-break: break-all;

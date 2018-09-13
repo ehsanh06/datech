@@ -99,12 +99,12 @@ section.mediForm__section {
         display: none;
     }
 
-    main.medi__main,
+    main.mobile,
     section.mediForm__section {
         display: block;
     }
 
-    main.medi__main {
+    main.mobile__main {
         padding: 4em;
         background: url(../images/stock-image.png);
         background-repeat: no-repeat;
@@ -124,7 +124,7 @@ section.mediForm__section {
 
 // Big sized phones
 @media screen and (max-width: 425px) {
-    main.medi__main {
+    main.mobile__main {
         padding: 2em;
 
         >div:first-child {

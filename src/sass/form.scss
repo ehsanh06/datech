@@ -224,6 +224,14 @@ form {
                 word-break: break-all;
                 margin: 0;
             }
+
+            .container .checkmark:after {
+                left: 7px;
+                top: 3px;
+                width: 4px;
+                height: 9px;
+                border-width: 0 2px 2px 0;
+            }
     
             div.form__submit-container {
                 padding: 0.5em 0 1em;
@@ -232,4 +240,36 @@ form {
         }
     }
 
+}
+
+// Small mobile
+@media screen and (max-width: 375px) {
+    section.mobileForm__section {
+        form.mobile__form {
+            width: 75%;
+        }
+    }
+}
+
+// X-Small mobile
+@media screen and (max-width: 320px) {
+    section.mobileForm__section {
+        margin: 2em 0 5em;
+
+        form.mobile__form {
+            width: 80%;
+            padding: .5em 1em;
+
+            label .container {
+                padding-left: 40px;
+            }
+            label[for=gender] .container {
+                margin: 0 0 0 2em;
+            }
+
+            label[for=gender] .container:last-child {
+                margin: 0 0 0 1em;
+            }
+        }
+    }
 }

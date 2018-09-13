@@ -39,6 +39,32 @@ header {
     }
 }
 
+// Medium Mobile
+@media screen and (max-width: 375px) {
+    header {
+        .logo {
+            margin: 0 2.5em;
+
+            img {
+                max-width: 120%;
+            }
+        }
+    }
+}
+
+// Small Mobile
+@media screen and (max-width: 320px) {
+    header {
+        .logo {
+            margin: 0 1em;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
 // Main (Desktop Version)
 main.desktop__main {
     background: url(../images/stock-image.png);
@@ -122,7 +148,7 @@ section.mediForm__section {
     }
 }
 
-// Big sized phones
+// Large sized phones
 @media screen and (max-width: 425px) {
     main.mobile__main {
         padding: 2em;
@@ -132,6 +158,13 @@ section.mediForm__section {
                 padding: 0.5em 0 1em;
             }
         }
+    }
+}
+
+// Small-sized phones
+@media screen and (max-width: 320px) {
+    main.mobile__main {
+        padding: 2em 1.5em;
     }
 }
 
@@ -301,6 +334,35 @@ section#section__bim-consulting {
     }
 }
 
+// Small Phone
+@media screen and (max-width: 375px) {
+    section#section__bim-consulting {
+        div#bim-consulting__benefit-container {
+            div#benefit__content {
+                width: 90%;
+                margin: 5em auto;
+                word-break: break-all;
+            }
+        }
+    }
+}
+
+// X-Small Phone
+@media screen and (max-width: 320px) {
+    section#section__bim-consulting {
+        div#bim-consulting__benefit-container {            
+            img {
+                width: 30%;
+            }
+            div#benefit__content {
+                .button__container {
+                    width: 85%;
+                }
+            }
+        }
+    }
+}
+
 // Section Revit (Desktop version)
 section#section__revit,
 section#section__kompetenz {
@@ -422,13 +484,19 @@ section#section__revit {
             word-break: break-all;
         }
 
-        > div {
+        >div {
             >div:nth-child(2) {
                 width: 100%;
                 margin: 0;
                 padding: 3em 0;
             }
         }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    section#section__revit h2.section__h2 {
+        word-break: break-word;
     }
 }
 
@@ -521,13 +589,13 @@ section#section__kompetenz {
     section#section__kompetenz {
         padding: 2em;
 
-        > div {
+        >div {
             >div:first-child {
                 padding: 2em 0;
                 width: 100%;
                 margin: 0;
 
-                > div:first-child {
+                >div:first-child {
                     width: 100%;
                     margin: 0;
                 }
@@ -536,6 +604,7 @@ section#section__kompetenz {
     }
 }
 
+// Section Question (Desktop Version)
 section#section__question {
     background: $red;
     color: $white;
@@ -682,12 +751,11 @@ section#section__contact {
         .logo {
             img {
                 margin: 0 auto;
-                max-width: 75%;    
+                max-width: 75%;
             }
         }
 
         div:nth-child(2) {
-        
             #cadstudio__contact {
                 width: 100%;
                 margin: 1.5em 0 0;
@@ -709,6 +777,55 @@ section#section__contact {
     }
 }
 
+@media screen and (max-width: 375px) {
+    section#section__contact {
+        background-size: 450%;
+        padding: 1em 1.5em 3em;
+
+        div:nth-child(2) {
+            #cadstudio__contact {
+                ul.contact__social-networks {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    section#section__contact {
+            background-size: 600%;
+            background-position: -850px 0;
+
+            .logo {
+                img {
+                    margin: 0 0 0 auto;
+                }
+            }
+
+            >div:nth-child(2) {
+                padding: 1em 0;
+
+                
+                div#cadstudio__contact {
+                    p {
+                        font-size: 1em;
+                    }
+                    ul#contact-info {
+                        li {
+                            font-size: 1em;
+                        }
+                    }
+
+                    ul.contact__social-networks {
+                        width: 90%;
+                    }
+                }
+            }
+    }
+}
+
+// Footer
 footer {
     background: $black;
     color: $white;
@@ -775,5 +892,24 @@ footer {
         p {
             font-size: 1em;
         }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    footer {
+        padding: 1em;
+
+        ul.breadcrumb {
+            li+li:before {
+                padding: 6px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    footer p,
+    footer ul.breadcrumb li {
+        font-size: .8em;
     }
 }

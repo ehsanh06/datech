@@ -12,10 +12,7 @@ $gray: #dad7d6;
     justify-content: $property;
 }
 
-@mixin generateRatios($width, $height, $prefix: "ratio-") {
-    $class-name: $prefix + $width + "x"+ $height;
-
-    .#{$class-name} {
-        padding-bottom: ratio($width, $height);
-    }
+@mixin width-margin-auto($width, $margin) {
+    width: $width;
+    margin: $margin auto;
 }

@@ -12,10 +12,10 @@ form {
     }
 
     label {
+        @include flex(space-between);
+        
         font-size: 1.25em;
         margin: 0.75em 0;
-        display: flex;
-        justify-content: space-between;
         align-items: center;
         width: 100%;
 
@@ -157,11 +157,10 @@ form {
 
     form.mobile__form {
 
-        width: 50%;
-        background: #fff;
+        @include width-margin-auto(50%, 0);
+        background: $white;
         padding: 2em;
-        margin: 0 auto;
-        border: 1px solid black;
+        border: 1px solid $black;
 
         h3#form__heading {
             margin: 0.25em 0 1em 0;

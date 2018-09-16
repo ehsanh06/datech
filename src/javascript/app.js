@@ -3,14 +3,14 @@ $(() => {
         formMessages = $('#form-messages'),
         formSuccess = false;
 
-    // If viewport is 820px and below, remove desktop .App__main
+    // If viewport is 768px and below, remove desktop .App__main
     // Simple workaround for bug of Mobile version form
-    if ($(window).width() < 820) {
-        $('body main.desktop').remove();
+    if ($(window).width() < 768) {
+        $('body main.desktop__main').remove();
         form = $('.mobile__form');
     } else {
-        $('body main.mobile').remove();
-        form = $('.desktop__form')
+        $('body main.mobile__main').remove();
+        form = $('.desktop__form');
     }
 
     // Form event listener
@@ -28,30 +28,23 @@ $(() => {
             })
 
             // On successful request
-            .done((response) => {
-                // Form message has the success class
-                $(formMessages)
-                    .removeClass('error')
-                    .addClass('success')
+            .done(() => {
 
-                    // Set message text
-                    .text(response);
+                toastr.success('SUCCESS!');
 
                 // Empty the form
                 $('#fname', '#lname', '#gdpr', '#email').val('');
 
-                console.log(response);
+                console.log();
 
             })
             .fail((data) => {
 
                 // Form message has the error class
-                $(formMessages)
-                    .removeClass('success')
-                    .addClass('error');
+                toastr.warning('Oops! Something went wrong');
 
                 // Set message text
-                data.responseText !== '' ? $(formMessages).text(data.responseText) : $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                data.responseText !== '' ? $(formMessages).text(data.responseText) : console.log('Oops! An error occured and your message could not be sent.');
             });
     });
 
@@ -63,7 +56,7 @@ $(() => {
             formSuccess = true;
             setTimeout(() => {
                 if (formSuccess === true) {
-                    console.log('Hooray!');
+                    console.log('Form Success!');
                 }
             }, 1500);
         }

@@ -78,7 +78,7 @@ main.desktop__main {
 
         >p,
         .button__container {
-            padding: 2em 0;
+            padding: 1.5em 0;
         }
     }
 }
@@ -124,7 +124,7 @@ section.mobileForm__section {
     }
 
     main.mobile__main,
-    section.mediForm__section {
+    section.mobileForm__section {
         display: block;
     }
 
@@ -139,7 +139,7 @@ section.mobileForm__section {
         }
     }
 
-    section.mediForm__section {
+    section.mobileForm__section {
         display: block;
         padding: 4em 0;
         margin: 0 0 2em 0;
@@ -519,6 +519,10 @@ section#section__kompetenz {
 
             p {
                 font-size: 1.1em;
+            }
+
+            .button__container {
+                padding: 1em 0;
             }
         }
     }

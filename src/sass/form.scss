@@ -35,6 +35,9 @@ form {
             margin: 0;
         }
     }
+    label[for=gender] {
+        margin: 0;
+    }
     label[for=gdpr] {
         margin: 0.75em 0 0.25em;
     }

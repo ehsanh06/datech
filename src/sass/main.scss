@@ -314,6 +314,7 @@ section#section__bim-consulting {
         div#bim-consulting__about {
             @include width-margin-auto(85%, 2em);
             word-break: break-all;
+            padding: 0;
 
             p {
                 margin: 1em 0;
